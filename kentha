@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artists – Kentha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/artists">Artists</a></li>
+                <li><a href="/albums">Albums</a></li>
+                <li><a href="/podcasts">Podcasts</a></li>
+                <li><a href="/events-list">Events List</a></li>
+                <li><a href="/events-cards">Events Cards</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Artists</h1>
+        <section class="artist">
+            <h2>Kenny Bass</h2>
+            <p>Location: London [IT]</p>
+            <p>Practiced in the art of donating Elvis Presley in Bethesda, MD. Lead a team developing bongos for fun and profit. Garnered an industry award while exporting jump ropes for the underprivileged. Was quite successful at buying and selling teddy bears in the government sector. Spent several months testing the market […]</p>
+            <a href="/artist/kenny-bass">Read more</a>
+        </section>
+        <section class="artist">
+            <h2>Paula Richards</h2>
+            <p>Location: Miami [USA]</p>
+            <p>Spent 2001-2005 analyzing banjos in Gainesville, FL. Developed several new methods for getting my feet wet with sheep in Tampa, FL. Once had a dream of testing the market for bagpipes for no pay. Lead a team merchandising licorice for farmers. Spent college summers creating marketing channels for bathtub gin […]</p>
+            <a href="/artist/paula-richards">Read more</a>
+        </section>
+        <!-- Additional artist sections can be added here -->
+    </main>
+    <footer>
+        <p>&copy; 2025 Kentha Music Theme. All rights reserved.</p>
+    </footer>
+</body>
+</html>

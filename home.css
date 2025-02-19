@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #080d21;
+    background-size: cover;
+}
+/* Header Styles */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #080d21;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e50914;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(134, 50, 50);
+}
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Profile Dropdown */
+
+.profile-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    top: 100%;
+    right: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.profile-dropdown .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.profile-dropdown .dropdown-content a:hover {
+    background-color: rgb(134, 50, 50);
+}
+/* Show the Profile dropdown on hover */
+
+.profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Main Banner Styles */
+
+.main-banner {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.main-banner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.banner-content {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.banner-content h1 {
+    font-size: 2.5em;
+}
+
+.banner-content p {
+    margin: 20px 0;
+}
+
+.watch-now {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.watch-now:hover {
+    background-color: #b20710;
+}
+/* Movies Section Styles */
+
+.movies-section {
+    padding: 20px;
+}
+
+.movies-section h2 {
+    margin-bottom: 15px;
+}
+
+.movies-container {
+    display: flex;
+    gap: 170px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.movie-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(194, 28, 28, 0.5);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-card h3 {
+    padding: 10px 0;
+    font-size: 1.1em;
+    z-index: 1;
+}
+/* Set up movie cards to position the description correctly */
+
+.movie-card {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    /* Center align content inside the movie card */
+}
+/* Container for Play and Info buttons - Centering the buttons */
+
+.movie-actions {
+    display: flex;
+    justify-content: center;
+    /* Center the buttons horizontally */
+    gap: 10px;
+    /* Adds space between the buttons */
+    margin-top: 10px;
+}
+/* Play button styling */
+
+.play-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #e50914;
+    /* Red color for Play button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Hover effect for Play button */
+
+.play-button:hover {
+    background-color: #b20710;
+}
+/* Grey
+
+
+/* Make the movie container scrollable */
+
+.movies-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.movies-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.movies-container::-webkit-scrollbar-thumb {
+    background-color: #241516;
+    border-radius: 10px;
+}
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    background-image: url(ng1.jpg);
+    background-size: cover;
+}
